@@ -10,9 +10,7 @@ export default function Recepcao() {
       </Head>
       <div className={styles.content}>
         <main className={styles.section}>
-          <h1 className={styles.title}>
-            Acessar Página de Destino <a href="https://nextjs.org">Routes</a>
-          </h1>
+          <h1 className={styles.title}>Acessar Página de Destino</h1>
           <form>
             <button className="button" type="submit">
               Click Me
@@ -26,9 +24,9 @@ export default function Recepcao() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made With {" <3 By "}
+          Made With {" <3  "}And Securing By
           {/* <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
-          {"  "} <b> Gabriel Briks </b>
+          <b> &#160; Gabriel Briks </b>
         </a>
       </footer>
     </div>

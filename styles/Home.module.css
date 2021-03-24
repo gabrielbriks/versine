@@ -83,8 +83,8 @@
 
 .footer {
   width: 100%;
-  min-height: 100px;
-  max-height: 100%;
+  min-height: 70px;
+  max-height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
