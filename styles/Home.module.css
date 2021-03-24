@@ -1,24 +1,90 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  /* background-color: #00336d7e; */
+  width: 100%;
+  /* max-width: 1120px; */
+  height: 100%; /*Fazendo com que venha ocupar toda altura*/
+  min-height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  /* padding: 96px; */
+  /* background: #f0f0f5; */
+  background-color: #252525e8;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px; */
+  display: flex;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .main {
   padding: 5rem 0;
+  margin: 0;
+  min-height: 100%;
+  width: 850px;
+  max-width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #005c91;
+}
+
+.section {
+  /* padding: 5rem 0; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #252525e8; */
+  width: 100%;
+  min-height: 10vh;
+  max-width: 1200px;
+}
+
+.section form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 450px;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.section form input {
+  margin-top: 16px;
+  /* border-radius: 22px; */
+  text-align: center;
+  max-width: 100%;
+  height: 30px;
+}
+
+.section form input + input {
+  margin-bottom: 30px;
+}
+
+.section form button {
+  /* height: 50%; */
+  border-radius: 30px;
+  /* height: 30px; */
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  min-height: 100px;
+  max-height: 100%;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
@@ -36,7 +102,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
@@ -48,6 +114,7 @@
 
 .title {
   margin: 0;
+  margin-top: 5%;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -58,6 +125,8 @@
 }
 
 .description {
+  margin: 1rem;
+  margin-bottom: 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -82,9 +151,10 @@
 
 .card {
   margin: 1rem;
+  margin-bottom: 2rem;
   flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
+  padding: 4rem;
+  text-align: center;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
@@ -95,8 +165,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #98a1ac;
+  border-color: #717c8a;
 }
 
 .card h3 {
@@ -118,5 +188,19 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main {
+    width: 100vh;
+  }
+
+  .section form {
+    margin-bottom: 10%;
   }
 }

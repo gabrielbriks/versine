@@ -14,3 +14,41 @@ a {
 * {
   box-sizing: border-box;
 }
+
+button {
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  height: 60px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.button {
+  width: 50%;
+  height: 30px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  color: rgb(43, 43, 43);
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  /* line-height: 60px; */
+  transition: filter 0.3s; /* quando o "filter" mudar ele seta o tempo para a trasição */
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
